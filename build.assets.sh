@@ -73,6 +73,9 @@ CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -ldflags "-s -w -extldflags -st
 
 tar -czvf windows_amd64_client.tar.gz npc.exe conf/npc.conf conf/multi_account.conf
 
+CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -ldflags "-s -w -extldflags -static -extldflags -static" ./cmd/npc/npc.go
+
+tar -czvf darwin_arm64_client.tar.gz npc conf/npc.conf conf/multi_account.conf
 
 CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -ldflags "-s -w -extldflags -static -extldflags -static" ./cmd/npc/npc.go
 
