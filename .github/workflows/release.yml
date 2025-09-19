@@ -26,8 +26,8 @@ jobs:
         fi
     - name: Build
       run: |
-        chmod +x build.sh
-        ./build.sh
+        chmod +x build.assets.sh
+        ./build.assets.sh
     - name: Upload
       uses: softprops/action-gh-release@v1
       with:
