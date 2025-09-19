@@ -61,6 +61,7 @@ jobs:
           linux_mipsle_server.tar.gz
           linux_mips_client.tar.gz
           linux_mips_server.tar.gz
+          darwin_arm64_client.tar.gz
           darwin_amd64_client.tar.gz
           darwin_amd64_server.tar.gz
           windows_386_client.tar.gz
